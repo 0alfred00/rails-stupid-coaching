@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="display-4">Hello, find your answers here:</h1>
+  <%= @question %>
+  <h1 class="display-6">This is what your coach is answering:</h1>
+  <% if @question == "I am going to work" %>
+  <p>Great!</p>
+  <% elsif @question.include? '?' %>
+  <p>Silly question, get dressed and go to work!</p>
+  <% else %>
+  <p>I don't care, get dressed and go to work!</p>
+  <% end %>
+  <a href="ask">Ask another question!</a>
+</div>
